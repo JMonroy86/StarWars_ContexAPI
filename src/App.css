@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+body{
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#grad1 {
+    height: 1px;
+    background-image: linear-gradient(to right, #ffffff00 , #fac100);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  ul #grad1:hover{
+    height: 1px;
+    background-image: linear-gradient(to right, #ffffff00 , #8d0101f5);
+    cursor: pointer;
+    color: #857907f5;
   }
-  to {
-    transform: rotate(360deg);
+  ul #grad2:hover{
+    height: 1px;
+    background-image: linear-gradient(to right, #8d0101f5, #ffffff00 );
+    cursor: pointer;
+    color: #857907f5;
   }
+#grad2 {
+    height: 1px;
+    background-image: linear-gradient(to right, #fac100 , #ffffff00);
+  }
+
+.border-middle{
+    border-top: 1px solid #fac100;
 }
+
+ul .border-middle:hover{
+    border-top: 1px solid #8d0101f5;
+    cursor: pointer;
+    color: #857907f5;
+}
+.card{
+    width: 100%; 
+}
+.card .mycard-img-top{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;   
+    border: 1px solid #ffffff00;
+    object-fit: cover;
+ 
+
+}
+.card .mycard-img-top:hover{  
+    border: 1px solid #fac100;
+    cursor: pointer;
+
+}
+.card-body h1{
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    color: #fac000;
+    margin: 0;
+}
+.card-body h2{
+    font-family: 'Changa', sans-serif;
+    font-size: 18px;
+    color: #fac000ab;
+}
+.card-body h6{
+    font-family: 'Changa', sans-serif;
+    font-size: 15px;
+    color: #c0bebe4d;
+    text-align: right;
+    margin: 0;
+}
+.bg-img{
+    border: 1px solid red;
+    width: 100%;
+    height: 300px;
+}
+.zoom img {
+    object-fit: cover;
+    z-index: -1;
+   
+}
+.zoom {
+    transition: transform .4s;
+   
+}
+  
+  .zoom:hover {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1.02); 
+  }
+.mandalorian{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size:1.6rem;
+}
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(60, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+.not_found{
+    margin-top: 80px;
+    border-radius: 50px;   
+    border: 1px solid #ffffff50;
+}
+.not_found h1{
+    font-family: 'Monoton', cursive;
+    color: #ffd900;
+    font-size: 10rem;
+}
+.not_found h2{
+    font-family: 'Wallpoet', cursive;
+    color: #ff1111;
+    font-size: 6rem;
+}
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    height: 500px;
+    z-index: 1;
+    object-fit: cover;
+    object-position: 100% 30%;
+  }
+  
+  
