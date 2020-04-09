@@ -11,7 +11,7 @@ const NavBar = () => {
                         <span>
                             <i className="fab fa-facebook fa-1x px-2"></i>
                             <i className="fab fa-instagram fa-1x px-2"></i>
-                            <i class="fab fa-tumblr fa-1x px-2"></i>
+                            <i className="fab fa-tumblr fa-1x px-2"></i>
                             <i className="fab fa-twitter fa-1x px-2"></i>
                             <i className="fab fa-youtube fa-1x px-2"></i>
                         </span>
@@ -30,13 +30,15 @@ const NavBar = () => {
             </div>
             <div className="container pt-4">
                 <ul className="text-white-50 d-flex list-unstyled text-center">
-                    <li className="col-md-2 border-first" id="grad1"><img className="pt-3 img-fluid" src="../death_star.png" width="35" alt=""/></li>
-                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../droid.png" width="35" alt=""/></li>
-                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../ship.png" width="35" alt=""/></li>
-                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../starships.png" width="35" alt=""/></li>
-                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../species.png" width="35" alt=""/></li>
-                    
-                    <li className="col-md-2 border-last" id="grad2" ><img className="pt-3 img-fluid" src="../jedi.png" width="35" alt=""/></li>
+                    <li className="col-md-2 border-first" id="grad1">
+                        <Link to="/video"><img className="pt-3 img-fluid" src="../death_star.png" width="35" alt="" /></Link>
+                    </li>
+                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../droid.png" width="35" alt="" /></li>
+                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../ship.png" width="35" alt="" /></li>
+                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../starships.png" width="35" alt="" /></li>
+                    <li className="col-md-2 border-middle"><img className="pt-3 img-fluid" src="../species.png" width="35" alt="" /></li>
+
+                    <li className="col-md-2 border-last" id="grad2" ><img className="pt-3 img-fluid" src="../jedi.png" width="35" alt="" /></li>
                 </ul>
             </div>
         </>

@@ -1,3 +1,42 @@
-body{
-  background-color: aqua;
+.pagination .active a {
+    color: #143361;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.pagination .active a:hover {
+    background-color: transparent;
+    color: #143361;
+    border: 0px;
+}
+
+.pagination .active a:focus {
+    background-color: transparent;
+    color: #143361;
+    outline: none;
+}
+
+.pagination li a {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    border: 1px;
+    margin-left: 0px;
+    color: #707070;
+    padding: 7px 2px;
+    margin: 0px 20px;
+}
+
+.pagination li a:hover {
+    background-color: transparent;
+    color: #4A90E2;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+    padding: 7px 2px;
+    margin: 0px 20px;
+}
+
+.pagination li a :focus {
+    outline: none;
+    background-color: transparent;
+    color: #707070;
 }

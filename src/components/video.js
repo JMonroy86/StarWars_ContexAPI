@@ -6,9 +6,9 @@ const VideoBackground = () => {
     return (
         <>
 
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
                         <video className="pt-4" autoPlay muted loop id="myVideo">
                             <source src="../rise.mp4" type="video/mp4" />
 
