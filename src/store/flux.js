@@ -16,7 +16,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                            
                             films: data
                         })
-                    });
+                    })
+                    .catch(()=> {});
             },
             getPeople(url) {
                 fetch(url)
@@ -27,6 +28,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                         })
                         console.log(data)
                     })
+                    .catch(()=> {});
+
             },
             getVehicle(url) {
                 fetch(url)
@@ -37,6 +40,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                         })
                         console.log(data)
                     })
+                    .catch(()=> {});
+
             },
             getStarShips(url) {
                 fetch(url)
@@ -47,6 +52,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                         })
                         console.log(data)
                     })
+                    .catch(()=> {});
+
             }
         }
     }
