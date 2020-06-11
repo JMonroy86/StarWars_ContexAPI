@@ -42,12 +42,12 @@ const People = () => {
             }
 
             </div>
-            <div className="row" >
+            {/* <div className="row" >
                 <div className="col-md-12 d-flex justify-content-between" >
                     <button className="btn tbn-primary btn-md" onClick={() => actions.getPeople(store.people.previous)} > Previous </button>
                     <button className="btn tbn-primary btn-md" onClick={() => actions.getPeople(store.people.next)} > Next </button>
                 </div >
-            </div>
+            </div> */}
         </div>
     </>
     )
