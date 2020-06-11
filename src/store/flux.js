@@ -1,3 +1,4 @@
+let urlpath = "https://swapi.dev/api/"
 const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
@@ -8,7 +9,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         },
         actions: {
             getFilms: url => {
-                fetch(url)
+                fetch(urlpath+url)
                     .then(resp => resp.json())
                     .then(data => {
                         console.log(data)
@@ -20,7 +21,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                     .catch(()=> {});
             },
             getPeople(url) {
-                fetch(url)
+                fetch(urlpath+url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
@@ -32,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
             },
             getVehicle(url) {
-                fetch(url)
+                fetch(urlpath+url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
@@ -44,7 +45,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
             },
             getStarShips(url) {
-                fetch(url)
+                fetch(urlpath+url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
