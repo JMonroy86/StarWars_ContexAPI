@@ -1,4 +1,4 @@
-let urlpath = "https://swapi.dev/api/"
+let urlpath = "//swapi.dev/api/"
 const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
