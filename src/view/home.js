@@ -14,12 +14,12 @@ const Home = props => {
             <div className="container" >
                 <div className="row" >
                     <div className="col" >
-                        {
+                        <VideoBackground />
+                        <Bestmovies />
+                        <Character />
+                        {/* {
                             store.films.results != null ?
                                 (<>
-                                    <VideoBackground />
-                                    <Bestmovies />
-                                    <Character />
                                 </>
                                 ) :
                                 (<div className="container pt-5" >
@@ -33,7 +33,7 @@ const Home = props => {
                                     </div >
                                 </div>
                             )
-                        }
+                        } */}
                     </div>
                 </div >
             </div>
