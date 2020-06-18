@@ -3,7 +3,7 @@ import { Context } from '../store/appContext';
 
 const Planets = (movies) => {
     const { store, actions } = useContext(Context);
-    console.log(store.films.results)
+    // console.log(store.films.results)
     return (
 
         <div className="container pt-5">

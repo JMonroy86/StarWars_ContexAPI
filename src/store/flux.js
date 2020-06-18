@@ -1,4 +1,3 @@
-let urlpath = "//swapi.dev/api/"
 const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
@@ -9,10 +8,10 @@ const getState = ({ getStore, getActions, setStore }) => {
         },
         actions: {
             getFilms: url => {
-                fetch(urlpath+url)
+                fetch(url)
                     .then(resp => resp.json())
                     .then(data => {
-                        console.log(data)
+                        // console.log(data)
                         setStore({
                            
                             films: data
@@ -21,37 +20,38 @@ const getState = ({ getStore, getActions, setStore }) => {
                     .catch(()=> {});
             },
             getPeople(url) {
-                fetch(urlpath+url)
+                console.log(url)
+                fetch(url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
                             people: data
                         })
-                        console.log(data)
+                        // console.log(data)
                     })
                     .catch(()=> {});
 
             },
             getVehicle(url) {
-                fetch(urlpath+url)
+                fetch(url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
                             vehicle: data
                         })
-                        console.log(data)
+                        // console.log(data)
                     })
                     .catch(()=> {});
 
             },
             getStarShips(url) {
-                fetch(urlpath+url)
+                fetch(url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
                             starships: data
                         })
-                        console.log(data)
+                        // console.log(data)
                     })
                     .catch(()=> {});
 

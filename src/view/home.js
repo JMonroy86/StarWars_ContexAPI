@@ -8,7 +8,7 @@ import './../App.css'
 
 const Home = props => {
     const { store, actions } = useContext(Context);
-    console.log(store.films.results)
+    // console.log(store.films.results)
     return (
         <>
             <div className="container" >

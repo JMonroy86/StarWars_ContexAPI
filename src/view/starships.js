@@ -45,8 +45,8 @@ const StarShips = () => {
             </div>
             <div className="row" >
                 <div className="col-md-12 d-flex justify-content-between" >
-                    <button className="btn tbn-primary btn-md" onClick={() => actions.getStarShips(store.starships.previous)} > Previous </button>
-                    <button className="btn tbn-primary btn-md" onClick={() => actions.getStarShips(store.starships.next)} > Next </button>
+                    <button className="btn tbn-primary btn-md" onClick={() => actions.getStarShips(store.starships.previous.replace("http://swapi.dev/api/starships/","https://swapi.dev/api/starships/"))} > Previous </button>
+                    <button className="btn tbn-primary btn-md" onClick={() => actions.getStarShips(store.starships.next.replace("http://swapi.dev/api/starships/","https://swapi.dev/api/starships/"))} > Next </button>
                 </div >
             </div>
         </div>

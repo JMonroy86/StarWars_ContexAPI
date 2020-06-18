@@ -5,13 +5,32 @@ import { Link } from 'react-router-dom';
 
 const People = () => {
     const { store, actions } = useContext(Context);
-    console.log(store.people)
-    return (<>
+    // console.log(store.people);
+    let prev ="";
+    let next = ""
+    if (store.people.info !== null) {
+         prev=store.people.previous;
+         next=store.people.next;
+         if(prev == null){
+             prev= null;
+         }
+         else if( next == null){
+            next= null;
+         }
+         else{
+            prev.replace("http://swapi.dev/api/people/");
+            next.replace("http://swapi.dev/api/people/");
+            console.log(prev,next)
+         }
+        }
+
+        return (<>
         <div className="container pt-5" >
             <div className="row" > {
                 store.people.results != null ?
-                    (
-                        store.people.results.map((character, i) => {
+                (
+                    store.people.results.map((character, i) => {
+                        
                             // console.log(character.episode_id)
                             return (<div key={i} className="col-md-3" >
 
@@ -42,12 +61,12 @@ const People = () => {
             }
 
             </div>
-            {/* <div className="row" >
+            <div className="row" >
                 <div className="col-md-12 d-flex justify-content-between" >
-                    <button className="btn tbn-primary btn-md" onClick={() => actions.getPeople(store.people.previous)} > Previous </button>
-                    <button className="btn tbn-primary btn-md" onClick={() => actions.getPeople(store.people.next)} > Next </button>
+                    <button className="btn tbn-primary btn-md" onClick={() => actions.getPeople(store.people.previous.replace("http://swapi.dev/api/people/","https://swapi.dev/api/people/"))} > Previous </button>
+                    <button className="btn tbn-primary btn-md" onClick={() => actions.getPeople(store.people.next.replace("http://swapi.dev/api/people/","https://swapi.dev/api/people/"))} > Next </button>
                 </div >
-            </div> */}
+            </div>
         </div>
     </>
     )
