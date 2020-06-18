@@ -2,8 +2,7 @@ import React, { useContext } from 'react';
 import { Context } from '../store/appContext';
 
 const Planets = (movies) => {
-    const { store, actions } = useContext(Context);
-    // console.log(store.films.results)
+    const { store } = useContext(Context);
     return (
 
         <div className="container pt-5">

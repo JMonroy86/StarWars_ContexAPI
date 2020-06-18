@@ -5,7 +5,6 @@ import React from 'react';
 const VideoBackground = () => {
     return (
         <>
-
             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">

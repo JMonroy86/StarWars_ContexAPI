@@ -11,25 +11,22 @@ const getState = ({ getStore, getActions, setStore }) => {
                 fetch(url)
                     .then(resp => resp.json())
                     .then(data => {
-                        // console.log(data)
                         setStore({
-                           
+
                             films: data
                         })
                     })
-                    .catch(()=> {});
+                    .catch(() => { });
             },
             getPeople(url) {
-                console.log(url)
                 fetch(url)
                     .then((response) => response.json())
                     .then((data) => {
                         setStore({
                             people: data
                         })
-                        // console.log(data)
                     })
-                    .catch(()=> {});
+                    .catch(() => { });
 
             },
             getVehicle(url) {
@@ -39,9 +36,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                         setStore({
                             vehicle: data
                         })
-                        // console.log(data)
                     })
-                    .catch(()=> {});
+                    .catch(() => { });
 
             },
             getStarShips(url) {
@@ -51,9 +47,8 @@ const getState = ({ getStore, getActions, setStore }) => {
                         setStore({
                             starships: data
                         })
-                        // console.log(data)
                     })
-                    .catch(()=> {});
+                    .catch(() => { });
 
             }
         }
