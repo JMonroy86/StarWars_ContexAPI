@@ -9,7 +9,7 @@ const VideoBackground = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <video className="pt-4" autoPlay muted loop id="myVideo">
-                            <source src="../rise.mp4" type="video/mp4" />
+                            <source src={process.env.REACT_APP_STARWARS_BUCKET_URL+"rise.mp4"} type="video/mp4" />
 
                         </video>
                     </div>

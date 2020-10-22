@@ -10,12 +10,12 @@ const Bestmovies = () => {
             <div className="container pt-5">
                 <div className="row">
                     <div className="card bg-dark text-white w-100">
-                        <img className="card-img" src="../img/mandalorian.jpg" alt="" />
+                        <img className="card-img" src={process.env.REACT_APP_STARWARS_BUCKET_URL+"img/mandalorian.jpg"} alt="" />
                         <div className="card-img-overlay">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-6">
-                                        <img src="../img/mandalorian.png" width="100%" className="img-fluid" alt="" />
+                                        <img src={process.env.REACT_APP_STARWARS_BUCKET_URL+"img/mandalorian.png"} width="100%" className="img-fluid" alt="" />
                                         <p className="card-text text text-justify pt-5">The Mandalorians were an ancient martial order consisting of members from multiple species all bound by a common culture,
                                          creed and code. They originated on the planet Mandalore in the galaxy's Outer Rim and had a particularly unique role in galactic history
                                          as legendary warriors against the Jedi. From their homeworld, Mandalorians had flourished across Mandalorian Space and the galaxy at large,

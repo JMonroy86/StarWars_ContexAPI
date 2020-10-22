@@ -16,7 +16,7 @@ const Notfound = () => {
                     </div>
                 </div>
                 <div className="col-6 text-right p-0 ">
-                    <img src="../img/notfound.png" height="400" alt="" />
+                    <img src={process.env.REACT_APP_STARWARS_BUCKET_URL+"/img/notfound.png"} height="400" alt="" />
                 </div>
             </div>
         </div>

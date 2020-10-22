@@ -12,11 +12,12 @@ const StarShips = () => {
                     store.starships.results != null ?
                         (
                             store.starships.results.map((starShips, i) => {
-                                // console.log(starShips.episode_id)
+                                const AWS_img = store.starshipsImg.find(item => ((item.Key.replace("img/starships/", "")) == starShips.name + ".jpg"))
+                                console.log(AWS_img)
                                 return (<div key={i} className="col-md-3" >
 
                                     <div className="card bg-transparent pt-2" >
-                                        <img src={"../img/starShips/" + starShips.name + ".jpg"} className="mycard-img-top img-fluid"
+                                        <img src={process.env.REACT_APP_STARWARS_BUCKET_URL+AWS_img.Key} className="mycard-img-top img-fluid"
                                             alt="..." />
                                         <div className="card-body" >
                                             <h1 className="card-title" > {starShips.name} </h1>
@@ -32,7 +33,7 @@ const StarShips = () => {
                         (<div className="container pt-5" >
                             <div className="row" >
                                 <div className="col-12 text-center w-25" >
-                                    <img src="../resistance.png" width="50" className="animated infinite swing mx-auto" alt="" />
+                                    <img src={process.env.REACT_APP_STARWARS_BUCKET_URL+"/resistance.png"} width="50" className="animated infinite swing mx-auto" alt="" />
                                     <div className="typewriter" >
                                         <h1 className="text-white mandalorian pt-4" > Loading... </h1>
                                     </div >
